@@ -1,0 +1,13 @@
+@import '../../functions';
+
+// Circular Bordered ELement CSS
+#circular-drop {
+  $circular-shape-height: 5;
+  $radius: sqrt(square($circular-shape-height) + square(50));
+  $radius-vw: $radius*1vw;
+  $circular-shape-height-vw: $circular-shape-height*1vw;
+
+  margin-top: 100vh;
+  height: $circular-shape-height-vw;
+  clip-path: ellipse($radius-vw $circular-shape-height-vw at 50vw $circular-shape-height-vw);
+}

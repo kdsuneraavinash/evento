@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:700);
+
+// Main CSS
+#timer {
+  div {
+    display: inline-block;
+    text-transform: uppercase;
+
+    .description {
+      display: block;
+    }
+  }
+}
+
+// Countdown Responsive Adjustments Generation
+@mixin countdown-timer-fonts($min-width, $reference-value) {
+  @media (min-width: $min-width) {
+    #timer {
+      div {
+        padding: 0.6 * $reference-value;
+
+        .time {
+          height: 8 * $reference-value;
+          font-size: 5 * $reference-value;
+          width: 8 * $reference-value;
+        }
+
+        .description {
+          font-size: $reference-value*1.2;
+        }
+      }
+    }
+  }
+}
+
+@include countdown-timer-fonts(0px, 8px);
+@include countdown-timer-fonts(450px, 10px);
+@include countdown-timer-fonts(576px, 12px);
+@include countdown-timer-fonts(768px, 15px);
+@include countdown-timer-fonts(992px, 18px);
+@include countdown-timer-fonts(1200px, 20px);
