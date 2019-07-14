@@ -8,6 +8,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { CountdownTimerComponent } from './event-page/top-section/countdown-timer/countdown-timer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BasicDetailsComponent } from './event-page/basic-details/basic-details.component';
+import { DetailsModalComponent } from './event-page/basic-details/details-modal/details-modal.component';
 import { EventPageComponent } from './event-page/event-page.component';
 import { TopSectionComponent } from './event-page/top-section/top-section.component';
 import { GalleryComponent } from './event-page/gallery/gallery.component';
@@ -22,6 +23,7 @@ import { SocialContactComponent } from './event-page/social-contact/social-conta
     CountdownTimerComponent,
     NavbarComponent,
     BasicDetailsComponent,
+    DetailsModalComponent,
     EventPageComponent,
     TopSectionComponent,
     GalleryComponent,

@@ -1,0 +1,20 @@
+<div mdbModal #dataModal="mdbModal" class="modal fade" id="basicExample" tabindex="-1" role="dialog"
+  aria-labelledby="modalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title w-100" id="modalTitle">{{title}}</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="dataModal.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{content}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" mdbBtn color="dark" [outline]="true" size="sm" class="bwaves-light" data-dismiss="modal"
+          (click)="dataModal.hide()" mdbWavesEffect>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
