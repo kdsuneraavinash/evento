@@ -1,7 +1,17 @@
+@import '../../../variables';
+
 // Main CSS
 .icon {
   font-size: 5em;
   margin: 30px;
   color: #a80885;
   margin-bottom: 20px;
+}
+
+@media (max-width: $screen-sm) {
+  .icon {
+    font-size: 4em;
+    margin: 10px;
+    margin-bottom: 7px;
+  }
 }

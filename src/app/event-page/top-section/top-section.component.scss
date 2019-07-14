@@ -1,4 +1,5 @@
 @import '../../../functions';
+@import '../../../variables';
 
 // Images
 .top-image-backlay {
@@ -46,7 +47,7 @@ section {
   }
 }
 
-@include top-content-width(0, 100vw);
-@include top-content-width(768px, 90vw);
-@include top-content-width(992px, 80vw);
-@include top-content-width(1200px, 70vw);
+@include top-content-width($screen-xs, 100vw);
+@include top-content-width($screen-md, 90vw);
+@include top-content-width($screen-lg, 80vw);
+@include top-content-width($screen-xl, 70vw);

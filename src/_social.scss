@@ -1,15 +1,15 @@
 @mixin create-rounded-button($background-color, $foreground-color) {
   background-color: $background-color;
   color: $foreground-color !important;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 8px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50px !important;
-  font-size: 2.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 4px;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px !important;
+  font-size: 1.25em;
   border-style: solid;
   border-color: $background-color;
 
