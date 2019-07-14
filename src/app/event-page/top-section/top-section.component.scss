@@ -1,27 +1,10 @@
 @import '../../../functions';
 @import '../../../variables';
 
-// Images
-.top-image-backlay {
-  background-image: url(https://www.event.lk/assets/img/events/67383604776705053356679403_2020015484970845_7642887981040140288_n.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-
-  .top-image {
-    background-image: transparentized-linear-gradient2(270deg, #2a0658, #074d38, 0.1),
-      url(https://blackrockdigital.github.io/startbootstrap-new-age/img/bg-pattern.png);
-  }
-}
-
 // Main 
 section {
-  z-index: -1;
-  position: fixed;
-  top: 0;
-  width: 100vw;
+  background-image: transparentized-linear-gradient2(225deg, #0f0c29, #302b63, 0);
+  overflow-x: hidden;
 
   #content {
     min-height: 100vh;

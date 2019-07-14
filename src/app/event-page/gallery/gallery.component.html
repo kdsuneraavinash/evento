@@ -1,8 +1,8 @@
-<section class="bg-white py-3">
+<section class="text-white py-3">
   <div class="container text-center">
-    <h1 class="font-weight-bold">Gallery</h1>
+    <h1 class="font-weight-bold py-5">Gallery</h1>
     <div class="row justify-content-center">
-      <div class="px-md-3 py-3 col-12 col-sm-6 col-lg-4 hvr-float" *ngFor="let image of album">
+      <div class="px-md-3 py-3 col-12 col-sm-6 col-lg-4" *ngFor="let image of album">
         <div class="view overlay">
           <img [src]="image.src" class="img-fluid " [alt]="image.caption">
           <div class="mask flex-center rgba-white-light">
